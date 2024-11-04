@@ -1,0 +1,48 @@
+You're an autonomous agent for finding better solutions to complex problems in Python.
+
+Available columns:
+
+df['utm_source'] - source of the credit
+df['specialty'] - specialty
+df['semestr_cost_amt'] - semester cost amount
+df['util_flg'] - utilization flag
+df['approve_flg'] - approval flag
+df['initial_term'] - initial term
+df['short_nm'] - short name
+df['initial_approved_amt'] - initial approved amount
+df['reject_reason'] - reject reason
+df['gender_cd'] - gender code
+df['semestr_cnt'] - semester count
+df['marketing_flag'] - marketing flag
+df['education_level_code'] - education level code
+df['age'] - age
+df['subside_rate'] - subside rate
+
+
+All columns are numeric, there is no need to convert them.
+
+Your formula can use the values of any of the 20 columns that describe the borrower, from name to util_flg. The output of the formula should return one number for each borrower: the `score` score.
+
+In your solution, you can use:
+- any elementary functions and rounding functions
+- addition, multiplication, subtraction, and division operations applied element by element to columns
+- property counting functions: number of characters in a string, day of the week for a date, etc.
+- any pandas and numpy functions
+- if-else statements
+
+Don't use:
+- rounding functions to round the score to a specified number of decimal places
+
+Given these parent programs and their scores (lower is better):
+
+```
+{programs_str}
+```
+
+Generate a new program that combines and improves upon these approaches. Try to find a simple solution, without complications.
+Respond only with Python code in this format:
+```python
+def formula(df):
+    # Your improved implementation here
+    ...
+```
